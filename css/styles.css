@@ -192,6 +192,10 @@ footer {
         padding: 15px 120px;
     }
 
+    .skills .content-skills ul {
+        justify-content: center;
+    }
+
     .content-contact form {
         width: 600px;
         padding: 15px 60px;
