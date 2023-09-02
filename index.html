@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Ejercicio 2 - Curso React</title>
 </head>
 <body>
@@ -12,10 +13,8 @@
         <h2>Rodrigo.</h2>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -27,8 +26,12 @@
             <div class="title">
                 <h3>About Me</h3>
             </div>
-            <div class="content">
-                <p>Do laborum incididunt laboris nostrud laborum laboris esse. Nisi adipisicing veniam fugiat non elit. Duis cillum aliquip magna ut cupidatat ut. Laborum commodo ullamco esse cillum adipisicing veniam deserunt eu laborum incididunt pariatur. Lorem amet amet id et enim occaecat minim do duis. Do ut cillum exercitation voluptate esse ex sint qui ut velit esse enim ex occaecat. Ullamco non in minim quis sunt qui culpa aliquip.</p>
+            <div class="content-about">
+                <div class="text">
+                    <h1>Hola! Mi nombre es Rodrigo 👋</h1>
+                    <p>Do laborum incididunt laboris nostrud laborum laboris esse. Nisi adipisicing veniam fugiat non elit. Duis cillum aliquip magna ut cupidatat ut. Laborum commodo ullamco esse cillum adipisicing veniam deserunt eu laborum incididunt pariatur. Lorem amet amet id et enim occaecat minim do duis. Do ut cillum exercitation voluptate esse ex sint qui ut velit esse enim ex occaecat. Ullamco non in minim quis sunt qui culpa aliquip.</p>
+                </div>
+                
                 <div class="img">
                     <img src="./img/foto.jpg" alt="">
                 </div>
@@ -41,48 +44,82 @@
     <section class="skills">
         <div class="container">
             <div class="title">
-                <h3>Skills</h3>
+                <h3>Habilidades</h3>
             </div>
-            <div class="content">
+            <div class="content-skills">
                 <ul>
                     <li>
                         <div class="card">
-                            HTML 5
+                            <i class='bx bxl-html5'></i>
+                            <span>HTML 5</span>
                         </div>
                     </li>
                     <li>
                         <div class="card">
-                            CSS
+                            <i class='bx bxl-css3' ></i>
+                            <span>CSS</span>
                         </div>
                     </li>
                     <li>
                         <div class="card">
-                            JavaScript
+                            <i class='bx bxl-javascript' ></i>
+                            <span>JavaScript</span>
                         </div>
                     </li>
                     <li>
                         <div class="card">
-                            Bootstrap
+                            <i class='bx bxl-bootstrap' ></i>
+                            <span>Bootstrap</span>
                         </div>
                     </li>
                     <li>
                         <div class="card">
-                            Sass
+                            <i class='bx bxl-sass' ></i>
+                            <span>Sass</span>
                         </div>
                     </li>
                     <li>
                         <div class="card">
-                            React
+                            <i class='bx bxl-react' ></i>
+                            <span>React</span>
                         </div>
                     </li>
                     <li>
                         <div class="card">
-                            Sass
+                            <i class='bx bxl-nodejs' ></i>
+                            <span>NodeJS</span>
                         </div>
                     </li>
                 </ul>
             </div>
         </div>
     </section>
+
+    <section class="contact">
+        <div class="container">
+            <div class="title">
+                <h3>Contacto</h3>
+            </div>
+        </div>
+        <div class="content-contact">
+            <form action="">
+                <label for="name">Nombre: </label>
+                <input type="text" name="name">
+
+                <label for="email">Email: </label>
+                <input type="email" name="email">
+
+                <label for="subject">Asunto: </label>
+                <input type="text" name="subject">
+
+                <label for="message">Mensaje: </label>
+                <textarea name="message" id="" cols="30" rows="10"></textarea>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright © 2021 Rodrigo</p>
+    </footer>
 </body>
 </html>
